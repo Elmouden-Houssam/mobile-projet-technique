@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "description": "Pizza avec plusieurs choix"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "description": "Burger au poulet et fromage"
+    },
+    {
+        "id": 3,
+        "name": "Tajin",
+        "description": "Tajin Poulet Avec Zitoun"
+    }
+]
