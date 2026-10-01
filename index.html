@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Restaurant Menu</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-orange-50 min-h-screen p-10">
+
+    <div class="max-w-2xl mx-auto">
+
+      <div class="flex justify-between items-center mb-6">
+
+        <h1 class="text-2xl font-bold text-orange-700">
+          Restaurant Menu
+        </h1>
+
+        <button
+          id="show-form"
+          class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700"
+        >
+          + Add Plat
+        </button>
+
+      </div>
+
+
+      <form
+        id="form"
+        class="hidden bg-white p-6 rounded-xl shadow-md space-y-4 mb-6"
+      >
+
+        <div>
+          <label class="block text-sm font-medium mb-1">
+            Name
+          </label>
+
+          <input
+            id="name"
+            type="text"
+            placeholder="Plat Name"
+            class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-orange-500"
+          />
+        </div>
+
+
+        <div>
+          <label class="block text-sm font-medium mb-1">
+            Description
+          </label>
+
+          <input
+            id="description"
+            type="text"
+            placeholder="Description"
+            class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-orange-500"
+          />
+        </div>
+
+
+        <button
+          type="submit"
+          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+        >
+          Add
+        </button>
+
+      </form>
+
+
+      <ul id="list" class="space-y-3"></ul>
+
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
