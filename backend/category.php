@@ -7,4 +7,4 @@ class Category
         public string $name,
         public string $description
     ) {}
-}
+};
