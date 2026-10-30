@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Tajine de Poulet",
+        "description": "Tajine poulet avec zitoun et frites"
+    },
+    {
+        "id": 2,
+        "name": "Tacos",
+        "description": "Poulet"
+    }
+]
