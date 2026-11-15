@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Gestion des plats</title>
+</head>
+<body class="bg-gray-100 p-6">
+  <div id="toast-container" class="fixed top-5 right-5 space-y-2"></div>
+  <main class="max-w-4xl mx-auto space-y-6">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Plats</h1>
+      <button id="btn-ajouter" class="bg-blue-600 text-white px-4 py-2 rounded">+ Ajouter</button>
+    </div>
+
+    <form id="form-plat" class="hidden bg-white p-4 rounded space-y-3">
+      <input id="name" class="w-full border p-2 rounded" placeholder="Nom du plat" required>
+      <textarea id="description" class="w-full border p-2 rounded" placeholder="Description" required></textarea>
+      <button class="bg-green-600 text-white px-4 py-2 rounded">Enregistrer</button>
+    </form>
+
+    <table class="w-full bg-white text-left">
+      <thead><tr><th class="p-3">ID</th><th class="p-3">Nom</th><th class="p-3">Description</th></tr></thead>
+      <tbody id="plats"></tbody>
+    </table>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
